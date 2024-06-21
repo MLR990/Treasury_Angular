@@ -1,0 +1,21 @@
+<h1>Transactions</h1>
+<table>
+  <thead>
+    <th>Id</th>
+    <th>Date</th>
+    <th>Amount</th>
+    <th>Description</th>
+    <th>Vendor</th>
+    <th>Reimbursable</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let t of transactions">
+      <td>{{ t.transactionId }}</td>
+      <td>{{ t.transactionDate }}</td>
+      <td>{{ t.amount }}</td>
+      <td>{{ t.description }}</td>
+      <td>{{ t.vendor }}</td>
+      <td>{{ t.reimbursable }}</td>
+    </tr>
+  </tbody>
+</table>
